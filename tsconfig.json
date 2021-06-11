@@ -1,10 +1,11 @@
 {
 	"compilerOptions": {
+		"baseUrl": ".",
 		"outDir": "dist",
 		"experimentalDecorators": true,
 		"allowJs": true,
 		"target": "ESNext",
-		"module": "umd",
+		"module": "CommonJS",
     "lib": [
       "ESNext",
       "dom"
@@ -22,6 +23,7 @@
     "noUnusedParameters": false,
 		"suppressImplicitAnyIndexErrors": true,
 		"importHelpers": true,
+		"resolveJsonModule": true,
 		"typeRoots": [
 			"node_modules/@types",
 			"src/types"
@@ -29,7 +31,8 @@
 	},
 	"include": [
 		"./**/*.ts",
-		"package.json"
+		"package.json",
+		"README.md"
 	],
   "exclude": [
     "dist/*",
