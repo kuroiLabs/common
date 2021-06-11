@@ -1,0 +1,35 @@
+{
+  "name": "@kuroilabs/common",
+  "version": "1.0.0",
+  "description": "Common library for all kuroiLabs TypeScript projects",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuroiLabs/common.git"
+  },
+  "keywords": [
+    "typescript",
+    "utility"
+  ],
+  "author": "@kuromakes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kuroiLabs/common/issues"
+  },
+  "homepage": "https://github.com/kuroiLabs/common#readme",
+  "dependencies": {
+    "buffer": "^6.0.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.12",
+    "@types/node": "^14.17.2",
+    "ts-node": "~8.3.0",
+    "tslint": "~6.1.0",
+    "typescript": "^3.9.7"
+  }
+}

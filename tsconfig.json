@@ -1,0 +1,39 @@
+{
+	"compilerOptions": {
+		"outDir": "dist/common",
+		"experimentalDecorators": true,
+		"allowJs": true,
+		"target": "ESNext",
+		"module": "commonjs",
+    "lib": [
+      "ESNext",
+      "dom"
+    ],
+		"declaration": true,
+		"declarationMap": true,
+		"strict": false,
+		"sourceMap": true,
+		"noImplicitAny": false,
+		"alwaysStrict": true,
+		"esModuleInterop": true,
+		"moduleResolution": "node",
+    "removeComments": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+		"resolveJsonModule": true,
+		"suppressImplicitAnyIndexErrors": true,
+		"importHelpers": true,
+		"typeRoots": [
+			"node_modules/@types",
+			"src/types"
+		]
+	},
+	"include": [
+		"./**/*.ts",
+		"package.json"
+	],
+  "exclude": [
+    "dist/*",
+    "node_modules"
+  ]
+}
