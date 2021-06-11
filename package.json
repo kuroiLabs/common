@@ -2,10 +2,15 @@
   "name": "@kuroilabs/common",
   "version": "1.0.0",
   "description": "Common library for all kuroiLabs TypeScript projects",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc"
   },
+  "files": [
+    "dist/**/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kuroiLabs/common.git"
