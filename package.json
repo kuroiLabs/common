@@ -1,5 +1,5 @@
 {
-  "name": "@kuroilabs/common",
+  "name": "@kuroi/common",
   "version": "1.0.0",
   "description": "Common library for all kuroiLabs TypeScript projects",
   "main": "dist/index.js",
