@@ -13,8 +13,11 @@ export class KuroiLabsServer {
 
   protected httpServer: http.Server
 
-  constructor(routes: KuroiLabsAPIRoute[]) {
+  protected root: string
+
+  constructor(routes: KuroiLabsAPIRoute[], root?: string) {
     this.routes = routes || []
+    this.root = root === undefined ? '*/api' : ''
     this.api.use(express.json())
     this.api.use(cors())
     this.configureRoutes()
@@ -27,7 +30,7 @@ export class KuroiLabsServer {
   private configureRoutes(): void {
     if (this.routes) {
       for (const route of this.routes) {
-        this.api.use(route.path, route.router)
+        this.api.use(`${this.root}/${route.path || ''}`, route.router)
       }
     }
   }
