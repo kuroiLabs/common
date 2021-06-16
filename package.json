@@ -1,16 +1,12 @@
 {
   "name": "@kuroi/common",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Common library for all kuroiLabs TypeScript projects",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
-  "types": "dist/index.d.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "shx rm -rf ./lib/ && tsc && shx cp package.json lib/package.json"
   },
-  "files": [
-    "dist/**/*"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kuroiLabs/common.git"
@@ -19,7 +15,7 @@
     "typescript",
     "utility"
   ],
-  "author": "@kuromakes",
+  "author": "kuro <kuro@kuroi.io>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kuroiLabs/common/issues"
@@ -33,6 +29,7 @@
   "devDependencies": {
     "@types/express": "^4.17.12",
     "@types/node": "^14.17.2",
+    "shx": "^0.3.3",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "^3.9.7"
