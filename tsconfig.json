@@ -1,7 +1,7 @@
 {
 	"compilerOptions": {
 		"baseUrl": ".",
-		"outDir": "dist",
+		"outDir": "lib",
 		"experimentalDecorators": true,
 		"allowJs": true,
 		"target": "ESNext",
@@ -26,13 +26,11 @@
 		"resolveJsonModule": true,
 		"typeRoots": [
 			"node_modules/@types",
-			"src/types"
+			"types"
 		]
 	},
 	"include": [
-		"./**/*.ts",
-		"package.json",
-		"README.md"
+		"src/**/*.ts"
 	],
   "exclude": [
     "dist/*",
