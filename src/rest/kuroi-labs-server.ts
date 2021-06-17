@@ -33,6 +33,7 @@ export abstract class KuroiLabsServer {
     }
     this.api.use(express.json())
     this.api.use(cors())
+    this.onInit()
   }
 
   /**
